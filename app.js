@@ -65,17 +65,17 @@
 // After searching, prompt the user whether the given item is
 // found in the list or not. Example:
 
-// var items = ["cake","pastry","cupcakes","tart","cookie","apple pie"];
-// var search = prompt("Welcome to desire bakery What do you want to order sir/ma'am?");
-// var found = false;
-// for(var i=0;i<items.length;i++){
-//     if(items == search){
-//    document.write( search + "is at index " + i + "<br/>" );
-//    found = true;
-//     }
+var items = ["cake","pastry","cupcakes","tart","cookie","apple pie"];
+var search = prompt("Welcome to desire bakery What do you want to order sir/ma'am?");
+for(var i=0;i<=items.length;i++){
+    if(items.includes(search)){
+   document.write( search + "is at index " + items[search] + "<br/>" );
+    }
 
-
-// }
+else{
+    document.write("We are sorry " + search + " is not available in our bakery");
+}
+}
 
 
 
